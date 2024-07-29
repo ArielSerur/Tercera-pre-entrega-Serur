@@ -1,0 +1,8 @@
+{% extends "app/base.html" %}
+{% load static %} 
+
+{% block main %} 
+{% for cliente in clientes %}
+    <li>Nombre : {{cliente.nombre}}, Email : {{cliente.email}}</li>
+{% endfor %}
+{% endblock main %}
